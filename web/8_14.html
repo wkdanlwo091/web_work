@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+</style>
+<script>
+	function print(){
+		//{ stk: 10, slt: 0, price: 500, name: 'Original' },
+
+		var favorites = [
+			{singer: 'taylor swift', playTime: 50, song:'mines'},
+			{singer: 'taylor swift', playTime: 40, song:'You belong to me'},
+			{singer: 'taylor swift', playTime: 30, song:"you're not sorry"}
+		];
+		// singer , play_time, name
+		for( var i in favorites){
+			alert("singer is : " + favorites[i].singer + " playTime is : " +
+			favorites[i].playTime + " song name is : " + favorites[i].song);
+		}
+		alert("you're not sorry");
+
+	}
+
+</script>
+</head>
+<body>
+	<input type = "button" value = "check" onclick = "print();">
+</body>
+</html>
